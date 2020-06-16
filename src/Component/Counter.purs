@@ -8,7 +8,6 @@ import Halogen.HTML (HTML, div_, p_, button, text)
 import Halogen.HTML.Events (onClick)
 
 data Action = Increment | Decrement
-type State = Int 
   
 component :: forall q i o m. Component HTML q i o m
 component =
