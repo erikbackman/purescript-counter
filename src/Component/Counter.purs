@@ -22,8 +22,8 @@ component =
       render state =
         div_
         [ p_
-          [ text (show state)
-          , button [ onClick \_ -> Just Decrement ] [ text "-" ]
+          [ button [ onClick \_ -> Just Decrement ] [ text "-" ]
+          , text (show state)
           , button [ onClick \_ -> Just Increment ] [ text "+" ]  
           ]
         ]
